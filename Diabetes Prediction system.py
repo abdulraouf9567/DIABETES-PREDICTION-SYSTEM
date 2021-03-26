@@ -105,3 +105,7 @@ model_predict_lgr=lgr.predict(X_test)
 lgr_test=model_lgr.score(X_test,y_test)
 lgr_train=model_lgr.score(X_train,y_train)
 print(lgr_test,lgr_train)
+
+#checking the probability of each patient
+model_lgr.predict_proba(X_test)
+
